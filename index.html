@@ -13,7 +13,7 @@
 
     <title>Expense</title>
 </head>
-<body >
+<body>
     <div class="container">
         <h1 class="text-center display-3">Expense Tracker</h1>
         <h2>Add a new Item</h2>
@@ -21,23 +21,23 @@
             <div class="form-group row">
                 <label for="name" class="col-sm-1 col-form-label">Name</label>
                 <div class="col-sm-7">
-                    <input type="text" name="name" class="form-control" placeholder="Where was the expense made?">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Where was the expense made?">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="date" class="col-sm-1 col-form-label">Date</label>
                 <div class="col-sm-7">
-                    <input type="date" name="date" class="form-control" placeholder="Where was the expense made?">
+                    <input type="date" name="date" id="date" class="form-control" placeholder="Where was the expense made?">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="amount" class="col-sm-1 col-form-label">Name</label>
+                <label for="amount" class="col-sm-1 col-form-label">Amount</label>
                 <div class="col-sm-7">
-                    <input type="number" name="amount" class="form-control" placeholder="Where was the expense made?">
+                    <input type="number" name="amount" id="amount" class="form-control">
                 </div>
             </div>
             </br>
-            <button type="submit">Add Expense</button>
+            <button type="submit" onclick="track()">Add Expense</button>
         </form>
 
         <br>
@@ -49,6 +49,8 @@
             <div class="p-2 w-25 border">Amount</div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
