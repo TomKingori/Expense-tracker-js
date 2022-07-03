@@ -17,7 +17,7 @@
     <div class="container">
         <h1 class="text-center display-3">Expense Tracker</h1>
         <h2>Add a new Item</h2>
-        <form>
+        <form id="new-expense-form">
             <div class="form-group row">
                 <label for="name" class="col-sm-1 col-form-label">Name</label>
                 <div class="col-sm-7">
@@ -37,16 +37,25 @@
                 </div>
             </div>
             </br>
-            <button type="submit" onclick="track()">Add Expense</button>
+            <button type="submit">Add Expense</button>
         </form>
 
         <br>
         <br>
         
         <div class="d-flex flex-row">
-            <div class="p-2 w-25 border">Name</div>
-            <div class="p-2 w-25 border">Date</div>
-            <div class="p-2 w-25 border">Amount</div>
+            <div class="p-2 w-25 border border-dark">Name</div>
+            <div class="p-2 w-25 border border-dark">Date</div>
+            <div class="p-2 w-25 border border-dark">Amount</div>
+        </div>
+        
+        <div id="expenses">
+            <!-- <div class="expense d-flex flex-row">
+                <div class="expensename p-2 w-25">Food</div>
+                <div class="expensedate p-2 w-25">12/06/2018</div>
+                <div class="expenseamount p-2 w-25">1200</div>
+                <button class="delete">X</button>
+            </div> -->
         </div>
     </div>
 
